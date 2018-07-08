@@ -10,11 +10,57 @@ using System.Windows.Forms;
 
 namespace CShNotepad
 {
-    public partial class Form1 : Form
+    public partial class CShNotepad : Form
     {
-        public Form1()
+        string path;
+
+        public CShNotepad()
         {
             InitializeComponent();
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            textBox.Clear();
+        }
+
+        private void newStripMenu_Click(object sender, EventArgs e)
+        {
+            path = string.Empty;
+            textBox.Clear();
+        }
+
+        private void openStripMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveStripMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveAsStripMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitStripMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutStripMenu_Click(object sender, EventArgs e)
+        {
+            using(aboutDialogue about = new aboutDialogue())
+            {
+                about.ShowDialog();
+            }
+        }
+
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

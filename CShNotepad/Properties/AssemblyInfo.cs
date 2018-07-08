@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("CShNotepad")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A basic notepad written with C# in Visual Studio")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("johnnyn1261")]
 [assembly: AssemblyProduct("CShNotepad")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
