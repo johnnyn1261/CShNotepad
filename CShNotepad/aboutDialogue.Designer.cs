@@ -33,15 +33,15 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.labelDescript = new System.Windows.Forms.Label();
             this.labelVersion = new System.Windows.Forms.Label();
-            this.labelAbout = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelLink = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Location = new System.Drawing.Point(184, 109);
+            this.labelName.Location = new System.Drawing.Point(187, 108);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(68, 13);
             this.labelName.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(180, 199);
+            this.btnOK.Location = new System.Drawing.Point(184, 197);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 1;
@@ -60,7 +60,7 @@
             // labelDescript
             // 
             this.labelDescript.AutoSize = true;
-            this.labelDescript.Location = new System.Drawing.Point(40, 128);
+            this.labelDescript.Location = new System.Drawing.Point(43, 127);
             this.labelDescript.Name = "labelDescript";
             this.labelDescript.Size = new System.Drawing.Size(356, 26);
             this.labelDescript.TabIndex = 0;
@@ -71,39 +71,41 @@
             // labelVersion
             // 
             this.labelVersion.AutoSize = true;
-            this.labelVersion.Location = new System.Drawing.Point(188, 159);
+            this.labelVersion.Location = new System.Drawing.Point(191, 159);
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(60, 13);
             this.labelVersion.TabIndex = 0;
             this.labelVersion.Text = "Version 1.0";
             // 
-            // labelAbout
-            // 
-            this.labelAbout.AutoSize = true;
-            this.labelAbout.Location = new System.Drawing.Point(138, 178);
-            this.labelAbout.Name = "labelAbout";
-            this.labelAbout.Size = new System.Drawing.Size(161, 13);
-            this.labelAbout.TabIndex = 0;
-            this.labelAbout.Text = "https://github.com/johnnyn1261";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(135, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(138, 6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 96);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // labelLink
+            // 
+            this.labelLink.AutoSize = true;
+            this.labelLink.Location = new System.Drawing.Point(141, 178);
+            this.labelLink.Name = "labelLink";
+            this.labelLink.Size = new System.Drawing.Size(161, 13);
+            this.labelLink.TabIndex = 3;
+            this.labelLink.TabStop = true;
+            this.labelLink.Tag = "https://github.com/johnnyn1261";
+            this.labelLink.Text = "https://github.com/johnnyn1261";
+            // 
             // aboutDialogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 231);
+            this.Controls.Add(this.labelLink);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.labelAbout);
             this.Controls.Add(this.labelVersion);
             this.Controls.Add(this.labelDescript);
             this.Controls.Add(this.labelName);
@@ -128,7 +130,7 @@
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label labelDescript;
         private System.Windows.Forms.Label labelVersion;
-        private System.Windows.Forms.Label labelAbout;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel labelLink;
     }
 }
