@@ -131,5 +131,49 @@ namespace CShNotepad
                 about.ShowDialog();
             }
         }
+
+        private void undo_Click(object sender, EventArgs e)
+        {
+            textBox.Undo();
+        }
+
+        private void redo_Click(object sender, EventArgs e)
+        {
+            textBox.Redo();
+        }
+
+        private void cut_Click(object sender, EventArgs e)
+        {
+            textBox.Cut();
+        }
+
+        private void copy_Click(object sender, EventArgs e)
+        {
+            textBox.Copy();
+        }
+
+        private void paste_Click(object sender, EventArgs e)
+        {
+            textBox.Paste();
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog font = new FontDialog();
+            font.Font = textBox.SelectionFont;
+            if (font.ShowDialog() == DialogResult.OK)
+            {
+                textBox.SelectionFont = font.Font;
+            }
+        }
+
+        private void backgroundToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog color = new ColorDialog();
+            if (color.ShowDialog() == DialogResult.OK)
+            {
+                textBox.BackColor = color.Color;
+            }
+        }
     }
 }
